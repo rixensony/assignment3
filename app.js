@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'dist', 'Frontend')));
 app.use(express.static(path.join(__dirname, 'dist', 'FrontEnd')));
 
 // Task2: create mongoDB connection 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/EmployeeDB?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://mevin224789_db_user:KrTNnpz2IuPY5j8a@cluster0.3g5d57p.mongodb.net/EmployeeDB?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
